@@ -1,0 +1,58 @@
+.volunteer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('../images/volunteerbg.png');
+    background-size: 80% 90%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #FFF9EE;
+}
+
+.voldesc{
+    max-width: 600px;
+    text-align: center;
+}
+.volrow1{
+    font-size: 42px;
+    color: #FF6600;
+    font-weight: 500;
+}
+.volrow2{
+    font-weight: 700;
+    font-size: large;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+.volimg{
+    height: 400px;
+    width: 400px;
+}
+.volimg img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 1000px){
+    .volunteer{
+        flex-direction: column;
+        background-image: none;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+        height: auto;
+    }
+    .volimg{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .volimg{
+        width: 95%;
+        height: auto;
+    }
+}

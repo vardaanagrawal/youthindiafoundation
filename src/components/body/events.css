@@ -1,0 +1,75 @@
+.events{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.eventsrow1{
+    font-size: 42px;
+    color: #FF6600;
+    font-weight: 500;
+}
+.eventsbox{
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-row-gap: 50px;
+}
+.eventcard{
+    height: 500px;
+    width: 350px;
+    box-shadow: black 1px 1px 15px 1px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    overflow: hidden;
+}
+
+.eventdesc{
+    width: 90%;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.eventcard:hover .eventdesc{
+    opacity: 1;
+}
+
+.eventwhitebox{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    left: -100%;
+    top: -50%;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 1s;
+}
+.eventcard:hover .eventwhitebox{
+    left: 0px;
+    top: 0px;
+    border-radius: 0%;
+}
+
+@media only screen and (max-width: 375px){
+    .eventsbox{
+        grid-template-columns: repeat(auto-fit, 100%);
+    }
+    .eventcard{
+        width: 94%;
+        height: 300px;
+        margin-left: 3%;
+    }
+}

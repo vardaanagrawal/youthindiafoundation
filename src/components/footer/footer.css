@@ -1,0 +1,40 @@
+.footer{
+    padding: 50px 0px;  
+    background-color: rgb(1, 56, 1); 
+    color: white;
+}
+
+.foottop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.social a{
+    background-color: #FF6600;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.footbottom{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media only screen and (max-width: 680px){
+    .foottop{
+        flex-direction: column;
+        margin: 50px 0px;
+    }
+    .footbottom{
+        flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+    }
+}

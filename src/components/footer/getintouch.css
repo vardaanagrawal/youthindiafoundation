@@ -1,0 +1,103 @@
+.getintouch{
+    height: auto;
+    width: 100%;
+    padding: 50px 0px 0px 0px;
+    background: url('https://www.youthindiafoundation.com/static/img/home/landingpage.svg') center/cover no-repeat;
+}
+
+.gittop{
+    display: flex;
+}
+.gitmessage{
+    flex: 1;
+    padding: 80px;
+}
+.gitrow1{
+    color: #FF6600;
+    font-weight: 500;
+}
+.gitrow2{
+    font-size: 46px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+.gittext{
+    width: 90%;
+}
+.gitform{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gitformbox{
+    background-color: white;
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+input{
+    height: 25px;
+    width: 70%;
+    border: silver 0.5px solid;
+    padding: 5px 10px;
+}
+
+.gitbottom{
+    display: flex;
+}
+.gbbox{
+    height: 100px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(147, 173, 33, 0.137),rgba(145, 129, 37, 0.103));
+    font-size: larger;
+    text-align: center;
+    margin-top: 50px;
+    border: solid 0.2px silver
+}
+
+.gblogo{
+    background-color: white;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gbtext{
+    width: 250px;
+}
+
+@media only screen and (max-width: 1000px){
+    .gitbottom{
+        flex-direction: column;
+        height: 400px;
+    }
+    .gbbox{
+        margin-top: 0px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .gittop{
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .gitmessage{
+        padding: 0%;
+        padding-bottom: 50px;
+        align-items: center;
+        
+    }
+}

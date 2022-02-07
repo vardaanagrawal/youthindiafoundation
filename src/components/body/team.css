@@ -1,0 +1,77 @@
+.team{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e9e9e9;
+    padding: 50px 0px;
+}
+
+.teamrow1{
+    width: 80%;
+    font-size: large;
+    font-weight: 500;
+    color: #FF6600;
+}
+
+.teamrow2{
+    width: 80%;
+    font-size: xx-large;
+    font-weight: 500;
+    margin: 10px 0px 40px 0px;
+}
+
+.teambox{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    justify-content: space-between;
+    grid-row-gap: 50px;
+}
+
+.teamcard{
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-size: 100% 100%;
+}
+
+.teamcardtext{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.467);
+    position: relative;
+    top: 245px;
+    transition: all 0.5s;
+}
+.teampos, .teamdesc{
+    color: #FF6600;
+    font-weight: 600;
+}
+.teamname{
+    font-size: 44px;
+    color: white;
+    font-weight: 600;
+}
+.teamcard:hover .teamcardtext{
+    top: 80px
+}
+
+
+@media only screen and (max-width: 320px){
+    .teambox{
+        grid-template-columns: repeat(auto-fit,100%);
+    }
+    .teamcard{
+        width: 100%;
+        margin-left: 1%;
+    }
+    .teamname{
+        font-size: 36px;
+    }
+    .teamcardtext{
+        top: 270px
+    }
+}
