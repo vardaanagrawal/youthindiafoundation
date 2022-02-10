@@ -1,12 +1,15 @@
 import React from "react";
 import './founder.css';
 import founder from '../images/founder.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 export default function Founder() {
   return (
     <div className="founder">
-      <div className="founderimg"><img src={founder}></img></div>
-      <div className="message">
+      <div className="founderimg" data-aos="fade-right"><img src={founder}></img></div>
+      <div className="message" data-aos="zoom-in">
         <h1 style={{color: '#FF6600',textAlign: 'center'}}>OUR FOUNDER MESSAGE</h1>
         <div className="innermessage">
           Mr Subhankar Nanda

@@ -2,6 +2,9 @@ import React from "react";
 import "./team.css";
 import team1 from '../images/team1.png';
 import team2 from '../images/team2.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 export default function Team() {
 
@@ -38,7 +41,7 @@ export default function Team() {
       <div className="teamrow2">OUR TEAM</div>
       <div className="teambox">
         {data.map((item) => (
-          <div className="teamcard" style={{backgroundImage: `url(${item.img})`}}>
+          <div className="teamcard" data-aos="fade-up" style={{backgroundImage: `url(${item.img})`}}>
             <div className="teamcardtext">
             <div className="teampos">{item.pos}</div>
             <div className="teamname">{item.name}</div>

@@ -7,6 +7,11 @@ import karnataka from '../images/Karnataka.svg';
 import delhi from '../images/Delhi.svg';
 import westbengal from '../images/WestBengal.svg';
 import outreach from '../images/yiffffff.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+  duration: 900
+});
 
 export default function Reach() {
   const data = [
@@ -54,7 +59,7 @@ export default function Reach() {
       
           
             {data.map((item) => (
-              <div key={item.loc} className="statecard">
+              <div key={item.loc} className="statecard" data-aos="zoom-in">
                 <img src={item.img}></img>
                 <div>{item.loc}</div>
                 <div className="statecarddesc">{item.desc}</div>

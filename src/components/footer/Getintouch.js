@@ -1,11 +1,14 @@
 import React from "react";
 import "./getintouch.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 export default function Getintouch() {
   return (
     <div className="getintouch">
       <div className="gittop">
-        <div className="gitmessage">
+        <div className="gitmessage" data-aos="fade-right">
           <div className="gitrow1">CHARITY</div>
           <div className="gitrow2">Get In Touch</div>
           <div className="gittext">
@@ -16,7 +19,7 @@ export default function Getintouch() {
             time. Send us a message and we know we will not let you down.
           </div>
         </div>
-        <div className="gitform">
+        <div className="gitform"  data-aos="zoom-in">
           <div className="gitformbox">
             <h3>Send Us a Message</h3>
             <input placeholder="First Name"></input>

@@ -3,6 +3,9 @@ import './program.css';
 import program1 from '../images/program1.jpg';
 import program2 from '../images/program2.jpg';
 import program3 from '../images/program3.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 export default function Program() {
 
@@ -27,7 +30,7 @@ export default function Program() {
       <div className="program-row2">Our Recent Leadership Program for YOUTH</div>
       <div className="program-box">
       {data.map((item) => (
-              <div key={item.img} className="programcard">
+              <div key={item.img} className="programcard" data-aos="fade-up">
                 <img src={item.img}></img>
                 <div className="programcarddesc">{item.desc}</div>
                 <button className="program-btn">To Register</button>

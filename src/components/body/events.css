@@ -54,7 +54,7 @@
     left: -100%;
     top: -50%;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 90%;
     transition: all 1s;
 }
 .eventcard:hover .eventwhitebox{

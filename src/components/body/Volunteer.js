@@ -1,11 +1,14 @@
 import React from "react";
 import "./volunteer.css";
 import volimg from "../images/volimg.jpg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 export default function Volunteer() {
   return (
     <div className="volunteer">
-      <div className="voldesc">
+      <div className="voldesc" data-aos="fade-right">
         <div className="volrow1">VOLUNTEER</div>
         <div className="volrow2">OUR OUTREACH CAMPAIGN</div>
         <div className="volrow3">
@@ -16,7 +19,7 @@ export default function Volunteer() {
         </div>
         <button style={{marginTop:"20px",fontWeight: '500',fontSize: '22px'}}>Be A Volunteer</button>
       </div>
-      <div className="volimg">
+      <div className="volimg" data-aos="zoom-in">
         <img src={volimg}></img>
       </div>
     </div>

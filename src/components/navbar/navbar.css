@@ -42,12 +42,12 @@ button {
   font-weight: 600;
   font-size: medium;
   margin: 0px 20px 0px 20px;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  border-color: 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 button:hover {
-  box-shadow: #ff6600 1px 1px 0px 10px;
+  box-shadow: #ff660052 1px 1px 0px 10px;
 }
 
 .mobilenavlinks {
@@ -73,6 +73,46 @@ button:hover {
   text-decoration: none;
   font-weight: 500;
 }
+
+.quickaccessbtn{
+  position: fixed;
+  top: 85vh;
+  right: 20px;
+  height: 80px;
+  width: 80px;
+  background-color: silver;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qabtns{
+  height: auto;
+  width: 200px;
+  position: fixed;
+  top: 30vh;
+  right: 20px;
+}
+
+.qablistitem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.qablogo{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 @media only screen and (max-width: 950px) {
   .navlinks {

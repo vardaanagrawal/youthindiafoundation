@@ -3,6 +3,9 @@ import "./events.css";
 import event1 from '../images/event1.jpeg';
 import event2 from '../images/event2.jpeg';
 import event3 from '../images/event3.jpeg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 export default function Events() {
 
@@ -26,7 +29,7 @@ export default function Events() {
       <div className="eventsrow1">Our Events</div>
       <div className="eventsbox">
         {data.map((item) => (
-          <div key={item.desc} className="eventcard" style={{backgroundImage: `url(${item.img})`,backgroundSize: '100% 100%'}}>
+          <div key={item.desc} className="eventcard" data-aos="fade-up" style={{backgroundImage: `url(${item.img})`,backgroundSize: '100% 100%'}}>
             <div className="eventwhitebox"><div className="eventdesc">{item.desc}</div></div>
           </div>
         ))}

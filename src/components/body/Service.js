@@ -3,6 +3,9 @@ import './service.css';
 import service1 from '../images/service1.png';
 import service2 from '../images/service2.png';
 import service3 from '../images/service3.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 export default function Service() {
 
@@ -29,7 +32,7 @@ export default function Service() {
     <div className="service-row2">Service we Provide</div>
     <div className="servicebox">
       {data.map((item) => (
-        <div key={item.img} className="servicecard">
+        <div key={item.img} className="servicecard" data-aos="fade-up">
           <div className="servicecardtop"><img src={item.img}/>{item.title}</div>
           <div className="servicecardmid">{item.desc}</div>
           <button className="servicebtn">Learn More</button>
