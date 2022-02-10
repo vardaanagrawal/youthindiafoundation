@@ -12,37 +12,37 @@ export default function Gallery() {
 
       <div
         id="carouselExampleControls"
-        class="carousel slide"
+        className="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <video src={gallery1} controls class="d-block w-100" alt="..." />
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <video src={gallery1} controls className="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <video src={gallery2} controls class="d-block w-100" alt="..." />
+          <div className="carousel-item">
+            <video src={gallery2} controls className="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <video src={gallery3} controls class="d-block w-100" alt="..." />
+          <div className="carousel-item">
+            <video src={gallery3} controls className="d-block w-100" alt="..." />
           </div>
         </div>
         <div
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
         </div>
         <div
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
         </div>
       </div>
     </div>

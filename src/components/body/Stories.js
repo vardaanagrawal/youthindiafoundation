@@ -29,11 +29,11 @@ export default function Stories() {
       <h1 style={{ marginBottom: "70px" }}>Read Stories</h1>
       <div
         id="carouselExampleIndicators"
-        class="carousel slide"
+        className="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
             <div className="storyimg">
               <img src={story1}></img>
             </div>
@@ -48,7 +48,7 @@ export default function Stories() {
               of public relations, marketing and business development.
             </div>
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <div className="storyimg">
               <img src={story2}></img>
             </div>
@@ -64,7 +64,7 @@ export default function Stories() {
               internship, and I put my heart and soul into it.
             </div>
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <div className="storyimg">
               <img src={story3}></img>
             </div>
@@ -84,27 +84,27 @@ export default function Stories() {
           </div>
         </div>
         <div
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
         </div>
         <div
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
         </div>
       </div>
       <div className="graphsbox">
       {data.map((item)=>(
-        <div className="graphs" data-aos="fade-up">
+        <div className="graphs" key={item.img} data-aos="fade-up">
           <img src={item.img}></img>
         </div>
       ))}

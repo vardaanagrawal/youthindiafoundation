@@ -1,5 +1,6 @@
 import React from "react";
 import './program.css';
+import { Link } from 'react-router-dom';
 import program1 from '../images/program1.jpg';
 import program2 from '../images/program2.jpg';
 import program3 from '../images/program3.jpg';
@@ -33,7 +34,7 @@ export default function Program() {
               <div key={item.img} className="programcard" data-aos="fade-up">
                 <img src={item.img}></img>
                 <div className="programcarddesc">{item.desc}</div>
-                <button className="program-btn">To Register</button>
+                <Link to="/register"><button className="program-btn">To Register</button></Link>
               </div>
             ))}
       </div>

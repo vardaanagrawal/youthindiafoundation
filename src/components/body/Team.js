@@ -41,7 +41,7 @@ export default function Team() {
       <div className="teamrow2">OUR TEAM</div>
       <div className="teambox">
         {data.map((item) => (
-          <div className="teamcard" data-aos="fade-up" style={{backgroundImage: `url(${item.img})`}}>
+          <div className="teamcard" key={item.name} data-aos="fade-up" style={{backgroundImage: `url(${item.img})`}}>
             <div className="teamcardtext">
             <div className="teampos">{item.pos}</div>
             <div className="teamname">{item.name}</div>
